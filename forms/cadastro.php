@@ -3,6 +3,7 @@
 ?>
 
     <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="../assets/style/stylecadastro.css/">
 </head>
 <body>
 <?php
