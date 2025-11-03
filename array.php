@@ -14,7 +14,7 @@ foreach ($mes as $key => $value){
     echo 'VAR_DUMP';
     var_dump($mes);
     echo '<hr>';
-    echo 'Posição 1 no array MÊS';
+    echo 'Posição 1 no array mês: ';
     echo $mes[1];
     echo '<hr>';
 
@@ -32,6 +32,16 @@ function dataAtual(): string
 
  $dataFormatada = $nomeDiasDaSemana[$diaSemana] . ', ' . $diaMes . ' de ' . $nomeDosMeses[$mes - 1] . ' de ' . $ano;
 
+ echo 'Dia do mês: ' . $diaMes . '<br>' . 'Dia Semana: ' . $diaSemana . '<br>' . 'Mês: ' . $mes . '<br>' . 'Ano: ' . $ano . '<br>';
  return $dataFormatada;
 }
     echo dataAtual();
+    echo '<hr>';
+function media($nota1 , $nota2 , $nota3 , $nota4)
+{
+
+ $media = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+ return $media;
+}
+echo 'Sua média é: ' . media(7 , 5 , 8 , 9);
+echo '<hr>';
